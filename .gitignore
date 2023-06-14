@@ -1,0 +1,11 @@
+FileMakerInfo/
+.DS_Store
+all.css
+info.php
+local_*
+.vscode/
+*.orig
+vendor/
+composer*
+favicon.ico
+

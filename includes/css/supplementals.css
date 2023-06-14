@@ -1,0 +1,603 @@
+/*
+ *  "Supplementals" CSS for the HR - Stipends Application
+ */
+
+:root {
+    --AthForm-CL:           hsl(0, 100%, 80%);
+    --OthForm-CL:           hsl(175, 100%, 80%);
+
+    --AthForm-Light:        hsl(0, 100%, 96%);
+    --OthForm-Light:        hsl(175, 100%, 96%);
+
+    --AthForm-CD:           rgb(125, 61, 48);
+    --OthForm-CD:           hsla(160, 59%, 23%);
+
+    --AthForm-Dark:         hsl(0, 62%, 18%);
+    --OthForm-Dark:         hsl(175, 100%, 10%);
+
+    --TB-Btn-CD-bg:         hsl(25, 76%, 85%);
+    --TB-Btn-CD-fg:         DarkSlateBlue;
+    --TB-Btn-CD-hover-fg:   hsl(57, 100%, 66%);
+    --TB-Btn-CD-hover-bg:   FireBrick;
+
+    --TB-Btn-CL-bg:         hsl(25, 95%, 92%);
+    --TB-Btn-CL-fg:         DarkSlateBlue;
+    --TB-Btn-CL-hover-fg:   hsl(57, 100%, 66%);;
+    --TB-Btn-CL-hover-bg:   FireBrick;
+
+    --TB-Btn-Dark-bg:       AliceBlue;
+    --TB-Btn-Dark-fg:       hsl(127, 100%, 15%);
+    --TB-Btn-Dark-hover-bg: hsl(68, 76%, 70%);
+    --TB-Btn-Dark-hover-fg: hsl(0, 100%, 15%);
+
+    --TB-Btn-Light-bg:       hsl(0, 22%, 49%);
+    --TB-Btn-Light-fg:       hsl(244, 100%, 97%);
+    --TB-Btn-Light-hover-bg: hsl(57, 100%, 66%);
+    --TB-Btn-Light-hover-fg: hsl(0, 62%, 20%);
+
+    --TB-Btn-disabled:      hsl(0, 0%, 53%);
+    --TB-Btn-disabled-bg:   hsl(0, 0%, 20%);
+
+    --View-Only-bg-light:   hsl(180, 100%, 90%);
+    --View-Only-bg-dark:    transparent;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.menu-title {
+    width: 100%;
+    display:inline-block;
+    margin: auto;
+    padding-right: 1.6em;
+    padding-left: 1.6em;
+    text-align:center;
+    font-weight: bold;
+    text-decoration: underline overline;
+}
+
+.menu-title::before {
+    content: '\02002';
+}
+
+.menu-title::after {
+    content: '\02002';
+}
+
+.toolbar-custom .toolbar-title {
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    font-variant: small-caps;
+    text-decoration: underline overline;
+    background-color: transparent;
+}
+
+.toolbar-title::after {
+    content: '\02002';
+}
+
+.toolbar-title::before {
+    content: '\02002';
+}
+
+.toolbar-custom .toolbar-title-sm {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-variant: small-caps;
+    text-decoration: underline overline;
+    background-color: transparent;
+}
+
+.toolbar-title-sm::after {
+    content: '\02009';
+}
+
+.toolbar-title-sm::before {
+    content: '\02009';
+}
+
+[data-dhx-theme="light"] .toolbar-custom .toolbar-title,
+[data-dhx-theme="light"] .toolbar-custom .toolbar-title-sm {
+    color: hsl(0, 0%, 20%) !important;
+}
+
+[data-dhx-theme="contrast-light"] .toolbar-custom .toolbar-title,
+[data-dhx-theme="contrast-light"] .toolbar-custom .toolbar-title-sm {
+    color: black !important;
+}
+
+[data-dhx-theme="contrast-dark"] .toolbar-custom .toolbar-title,
+[data-dhx-theme="contrast-dark"] .toolbar-custom .toolbar-title-sm {
+    color: hsl(5, 100%, 95%) !important;
+}
+
+[data-dhx-theme="dark"] .toolbar-custom .toolbar-title,
+[data-dhx-theme="dark"] .toolbar-custom .toolbar-title-sm {
+    color: hsl(120, 100%, 95%) !important;
+}
+
+[data-dhx-theme="light"] .toolbar-custom .dhx_navbar {
+    background-color: var(--AthForm-Light) !important;
+}
+
+[data-dhx-theme="contrast-light"] .toolbar-custom .dhx_navbar {
+    background-color: var(--AthForm-CL) !important;
+}
+
+[data-dhx-theme="contrast-dark"] .toolbar-custom .dhx_navbar {
+    background-color: var(--AthForm-CD) !important;
+}
+
+[data-dhx-theme="dark"] .toolbar-custom .dhx_navbar {
+    background-color: var(--AthForm-Dark) !important;
+}
+
+/* ----------------------------------------------------------- */
+
+[data-dhx-theme="dark"] .toolbar-custom .dhx_navbar button,
+[data-dhx-theme="dark"] .custom-sup-form-container,
+[data-dhx-theme="dark"] .custom-sup-form-button button {
+    background-color: var(--TB-Btn-Dark-bg) !important;
+    color: var(--TB-Btn-Dark-fg) !important;
+}
+
+[data-dhx-theme="dark"] .custom-sup-form-button button {
+    border: 1px solid var(--TB-Btn-Dark-fg) !important;
+}
+
+[data-dhx-theme="dark"] .toolbar-custom .dhx_navbar button:hover,
+[data-dhx-theme="dark"] .custom-sup-form-button button:hover {
+    background-color: var(--TB-Btn-Dark-hover-bg) !important;
+    color: var(--TB-Btn-Dark-hover-fg) !important;
+}
+
+[data-dhx-theme="dark"] .custom-sup-form-button button:hover {
+    border: 1px solid var(--TB-Btn-Dark-hover-fg) !important;
+}
+
+[data-dhx-theme="contrast-dark"] .toolbar-custom .dhx_navbar button,
+[data-dhx-theme="contrast-dark"] .custom-sup-form-container,
+[data-dhx-theme="contrast-dark"] .custom-sup-form-button button {
+    background-color: var(--TB-Btn-CD-bg) !important;
+    color: var(--TB-Btn-CD-fg) !important
+}
+
+[data-dhx-theme="contrast-dark"] .custom-sup-form-button button {
+    border: 1px solid var(--TB-Btn-CD-fg) !important
+}
+
+[data-dhx-theme="contrast-dark"] .toolbar-custom .dhx_navbar button:hover,
+[data-dhx-theme="contrast-dark"] .custom-sup-form-button button:hover {
+    background-color: var(--TB-Btn-CD-hover-bg) !important;
+    color: var(--TB-Btn-CD-hover-fg) !important;
+}
+
+[data-dhx-theme="contrast-dark"] .custom-sup-form-button button:hover {
+    border: 1px solid var(--TB-Btn-CD-hover-fg) !important;
+}
+
+[data-dhx-theme="light"] .toolbar-custom .dhx_navbar button,
+[data-dhx-theme="light"] .custom-sup-form-container,
+[data-dhx-theme="light"] .custom-sup-form-button button {
+    background-color: var(--TB-Btn-Light-bg) !important;
+    color: var(--TB-Btn-Light-fg) !important;
+}
+
+[data-dhx-theme="light"] .custom-sup-form-button button {
+    border: 1px solid black !important;
+}
+
+[data-dhx-theme="light"] .toolbar-custom .dhx_navbar button:hover,
+[data-dhx-theme="light"] .custom-sup-form-button button:hover {
+    background-color: var(--TB-Btn-Light-hover-bg) !important;
+    color: var(--TB-Btn-Light-hover-fg) !important;
+}
+
+[data-dhx-theme="contrast-light"] .toolbar-custom .dhx_navbar button,
+[data-dhx-theme="contrast-light"] .custom-sup-form-container,
+[data-dhx-theme="contrast-light"] .custom-sup-form-button button {
+    background-color: var(--TB-Btn-CL-bg) !important;
+    color: var(--TB-Btn-CL-fg) !important;
+}
+
+[data-dhx-theme="contrast-light"] .custom-sup-form-button button {
+    border: 1px solid black !important;
+}
+
+[data-dhx-theme="contrast-light"] .toolbar-custom .dhx_navbar button:hover,
+[data-dhx-theme="contrast-light"] .custom-sup-form-button button:hover {
+    background-color: var(--TB-Btn-CL-hover-bg) !important;
+    color: var(--TB-Btn-CL-hover-fg) !important;
+}
+
+[data-dhx-theme="contrast-light"] .toolbar-custom .dhx_navbar button:disabled,
+[data-dhx-theme="contrast-dark"] .toolbar-custom .dhx_navbar button:disabled,
+[data-dhx-theme="dark"] .toolbar-custom .dhx_navbar button:disabled,
+[data-dhx-theme="light"] .toolbar-custom .dhx_navbar button:disabled {
+    color: var(--TB-Btn-disabled) !important;
+    background-color: var(--TB-Btn-disabled-bg) !important;
+}
+
+/* ----------------------------------------------------------- */
+
+.supplist-toolbar-custom .supplist-toolbar-title {
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    font-variant: small-caps;
+    text-decoration: underline overline;
+    background-color: transparent;
+}
+
+.supplist-toolbar-title::before {
+    content: '\02002';
+}
+
+.supplist-toolbar-title::after {
+    content: '\02002';
+}
+
+/* --- Supplemental Form Configs ------------------------- */
+
+/* 
+    Note: for this "theme-based" form coloring to work,
+    the layout cell that is the parent of the layout cell
+    where the forms are attached must be "forced" to the 
+    "light theme" (with dhx.setTheme("light", "XXX"), where
+    "XXX" is the ID of that parent cell).  This is because
+    the "default" isn't actually the "light" theme but no
+    theme attribute at all.  DHTMLX liars!
+*/
+
+[data-dhx-theme="light"] .sup-ath-input-form,
+[data-dhx-theme="light"] .sup-ath-input-form .dhx_layout-cell,
+[data-dhx-theme="light"] .sup-ath-edit-form,
+[data-dhx-theme="light"] .sup-ath-edit-form .dhx_layout-cell {
+    background-color: var(--AthForm-Light) !important;
+}
+
+[data-dhx-theme="contrast-light"] .sup-ath-input-form,
+[data-dhx-theme="contrast-light"] .sup-ath-input-form .dhx_layout-cell,
+[data-dhx-theme="contrast-light"] .sup-ath-edit-form,
+[data-dhx-theme="contrast-light"] .sup-ath-edit-form .dhx_layout-cell {
+    background-color: var(--AthForm-CL) !important;
+}
+
+[data-dhx-theme="contrast-dark"] .sup-ath-input-form,
+[data-dhx-theme="contrast-dark"] .sup-ath-input-form .dhx_layout-cell,
+[data-dhx-theme="contrast-dark"] .sup-ath-edit-form,
+[data-dhx-theme="contrast-dark"] .sup-ath-edit-form .dhx_layout-cell {
+    background-color: var(--AthForm-CD) !important;
+}
+
+[data-dhx-theme="dark"] .sup-ath-input-form,
+[data-dhx-theme="dark"] .sup-ath-input-form .dhx_layout-cell,
+[data-dhx-theme="dark"] .sup-ath-edit-form,
+[data-dhx-theme="dark"] .sup-ath-edit-form .dhx_layout-cell {
+    background-color: var(--AthForm-Dark) !important;
+}
+
+[data-dhx-theme="dark"] .sup-ath-view-form,
+[data-dhx-theme="dark"] .sup-ath-view-form .dhx_layout-cell,
+[data-dhx-theme="contrast-dark"] .sup-ath-view-form,
+[data-dhx-theme="contrast-dark"] .sup-ath-view-form .dhx_layout-cell {
+    background-color: var(--View-Only-bg-dark);
+}
+
+[data-dhx-theme="light"] .sup-ath-view-form,
+[data-dhx-theme="light"] .sup-ath-view-form .dhx_layout-cell,
+[data-dhx-theme="contrast-light"] .sup-ath-view-form,
+[data-dhx-theme="contrast-light"] .sup-ath-view-form .dhx_layout-cell {
+    background-color: var(--View-Only-bg-light);
+}
+
+[data-dhx-theme="light"] .readonly-input input {
+    box-shadow: none !important;
+    background-color: var(--AthForm-Light) !important;
+}
+
+[data-dhx-theme="contrast-light"] .readonly-input input {
+    box-shadow: none !important;
+    background-color: var(--AthForm-CL) !important;
+}
+
+[data-dhx-theme="contrast-dark"] .readonly-input input {
+    box-shadow: none !important;
+    background-color: var(--AthForm-CD) !important;
+}
+
+[data-dhx-theme="dark"] .readonly-input input {
+    box-shadow: none !important;
+    background-color: var(--AthForm-Dark) !important;
+}
+
+/* --------------------------------------------------------------------- */
+
+[data-dhx-theme="light"] .sup-oth-view-form,
+[data-dhx-theme="light"] .sup-oth-view-form .dhx_layout-cell,
+[data-dhx-theme="light"] .sup-oth-input-form,
+[data-dhx-theme="light"] .sup-oth-input-form .dhx_layout-cell,
+[data-dhx-theme="light"] .sup-oth-edit-form,
+[data-dhx-theme="light"] .sup-oth-edit-form .dhx_layout-cell {
+    background-color: var(--OthForm-Light) !important;
+}
+
+[data-dhx-theme="contrast-light"] .sup-oth-view-form,
+[data-dhx-theme="contrast-light"] .sup-oth-view-form .dhx_layout-cell,
+[data-dhx-theme="contrast-light"] .sup-oth-input-form,
+[data-dhx-theme="contrast-light"] .sup-oth-input-form .dhx_layout-cell,
+[data-dhx-theme="contrast-light"] .sup-oth-edit-form,
+[data-dhx-theme="contrast-light"] .sup-oth-edit-form .dhx_layout-cell {
+    background-color: var(--OthForm-CL) !important;
+}
+
+[data-dhx-theme="contrast-dark"] .sup-oth-view-form,
+[data-dhx-theme="contrast-dark"] .sup-oth-view-form .dhx_layout-cell,
+[data-dhx-theme="contrast-dark"] .sup-oth-input-form,
+[data-dhx-theme="contrast-dark"] .sup-oth-input-form .dhx_layout-cell,
+[data-dhx-theme="contrast-dark"] .sup-oth-edit-form,
+[data-dhx-theme="contrast-dark"] .sup-oth-edit-form .dhx_layout-cell {
+    background-color: var(--OthForm-CD) !important;
+}
+
+[data-dhx-theme="dark"] .sup-oth-view-form,
+[data-dhx-theme="dark"] .sup-oth-view-form .dhx_layout-cell,
+[data-dhx-theme="dark"] .sup-oth-input-form,
+[data-dhx-theme="dark"] .sup-oth-input-form .dhx_layout-cell,
+[data-dhx-theme="dark"] .sup-oth-edit-form,
+[data-dhx-theme="dark"] .sup-oth-edit-form .dhx_layout-cell {
+    background-color: var(--OthForm-Dark) !important;
+}
+
+
+/* ------------------------------------ */
+
+.custom-view-only-window {
+    border: 1px solid black;
+}
+
+.custom-view-only-window .dhx_layout-cell.dhx_window-content {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+    padding-bottom: 2px !important;
+}
+
+[data-dhx-theme="dark"] .custom-view-only-window .dhx_layout-cell.dhx_window-content,
+[data-dhx-theme="dark"] .custom-view-only-window .dhx_layout-cell.dhx_window-header,
+[data-dhx-theme="contrast-dark"] .custom-view-only-window .dhx_layout-cell.dhx_window-content
+[data-dhx-theme="contrast-dark"] .custom-view-only-window .dhx_layout-cell.dhx_window-header {
+        background-color: var(--View-Only-bg-dark);
+}
+
+[data-dhx-theme="light"] .custom-view-only-window .dhx_layout-cell.dhx_window-content,
+[data-dhx-theme="light"] .custom-view-only-window .dhx_navbar,
+[data-dhx-theme="light"] .custom-view-only-window .dhx_layout-cell.dhx_window-header,
+[data-dhx-theme="contrast-light"] .custom-view-only-window .dhx_layout-cell.dhx_window-content
+[data-dhx-theme="contrast-light"] .custom-view-only-window .dhx_navbar,
+[data-dhx-theme="contrast-light"] .custom-view-only-window .dhx_layout-cell.dhx_window-header {
+        background-color: var(--View-Only-bg-light);
+}
+
+/* --------------------------------------------------------------------- */
+
+.form-banner .dhx_label {
+    color: var(--DarkBlue) !important;
+    padding-right: 20px;
+}
+
+.form-banner-pad .dhx_label {
+    padding-top: 0.5em;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+.custom-sup-form-group {
+    border-top: 1px solid var(--TabbarDkBlue);
+}
+
+.custom-sup-form-container {
+    display: flex;
+}
+
+.custom-sup-form-container * {
+    display: flex;
+    align-items: center;
+    width:fit-content;
+}
+
+.custom-sup-form-checkbox {
+    padding-top: 8px;
+}
+
+.custom-lookup-list-parent {
+    display: flex;
+    justify-content: start;
+}
+
+.custom-lookup-list-large {
+    display: inline-block;
+    width: 445px;
+}
+
+.custom-lookup-list-small {
+    display: inline-block;
+    width: 85px;
+}
+
+.custom-lookup-list-steps {
+    background-color: var(--butter);
+    padding-left: 5px;
+}
+
+.custom-lookup-list-steps::before {
+    content: 'STEPS: ';
+}
+
+.form-grid-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-left: 7px;
+    line-height: 30px;
+    font-variant: small-caps;
+    text-decoration: underline overline;
+    background-color: transparent;
+}
+
+.form-grid-title::after {
+    content: '\02009';
+}
+
+.form-grid-title::before {
+    content: '\02009';
+}
+
+.custom-grid-sm .dhx_grid-cell {
+    font-size: 0.9em !important;
+}
+
+.custom-toolbar-btn button {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    border-radius: 0.9rem;
+    cursor: pointer;
+}
+
+.custom-radio-button .dhx_form-group--inline {
+    align-items:baseline !important;
+}
+
+/* --- Supplemental Navigation Panel ------ */
+
+div#sup-nav-panel {
+    width: 100%;
+    background-color: var(--TabbarLtBlue);
+    border: 1px solid var(--DarkBlue);
+    padding: 10px 2px;
+}
+
+.sup-nav-title {
+    padding: 0 10px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.sup-nav-btn-grp {
+    background-color: transparent;
+}
+
+.sup-nav-btn-grp button {
+    border: 1px solid var(--DarkBlue);
+    color: black; /* White text */
+    padding: 1px 0.5em; /* Some padding */
+    margin-left: 1em;
+    cursor: pointer; /* Pointer/hand icon */
+}
+
+/* Add a background color on hover */
+
+.sup-nav-btn-grp button:hover {
+    background-color: var(--menu-bg1) !important;
+    color: var(--menu-fg1) !important;
+}
+
+.sup-nav-btn-grp button:hover:focus {
+    background-color: var(--menu-bg1) !important;
+    color: var(--menu-fg1) !important;
+}
+
+.sup-nav-btn-grp button:focus {
+    background-color: var(--menu-fg1) !important;
+}
+
+.nav-btn-flushed {
+    display: block;
+    float: right;
+    margin-right: 10px;
+}
+
+/* --- Supplemental Selection Grid ---- */
+
+div.grid-button {
+    display: flex;
+    justify-content:center;
+    align-self: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+div.grid-button > span {
+    cursor: pointer;
+    font-size: 1.1em;
+    color: var(--menu-bg1);
+    /*
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    */
+}
+
+div.grid-button > span:hover {
+    text-decoration-line: underline;
+}
+
+.analytic-content {
+    --dhx-background-primary: hsl(200, 100%, 90%);
+}
+
+/*  --- Experience container styles ---------------------------
+    --- Create four equal columns that floats next to each other */
+
+.expr-column {
+    display: flex;
+    /* align-items:flex-start; */
+    width: 25%;
+    border: 1px solid #777;
+    padding-left: 10px;
+    padding-top: 2px;
+    box-sizing:border-box;
+}
+
+.expr-row {
+    display: flex;
+    height:calc(171px - 35px);
+}
+
+.expr-table {
+    display: table;
+    height:fit-content;
+    margin-left: 1px;
+}
+
+.expr-table-row {
+    display:table-row;
+}
+
+.expr-table-cell {
+    display:table-cell;
+    vertical-align:top;
+    height:fit-content;
+    padding-bottom: 1px;
+}
+
+.expr-label {
+    font-size: 0.95em;
+    font-weight: bold;
+}
+
+.expr-data {
+    font-size:0.9em;
+    padding-left: 15px;
+    color: Firebrick;
+}

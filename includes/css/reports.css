@@ -1,0 +1,34 @@
+.PageHeader1 {
+    font-size: 18px;
+    font-weight: bold;
+    padding:3px;
+}
+
+.PageHeader2 {
+    font-size: 13px;
+    font-weight: bold;
+    padding:2px;
+    width: 100%;
+    align-content: right;
+    float: right;
+}
+
+.PageHeader3 {
+    font-size: 12px;
+    font-weight: bold;
+    padding:2px;
+}
+
+.PageHeader4 {
+    font-size: 11px;
+    padding-right: 10px;
+}
+
+.PageHeader5 {
+    font-size: 9px;
+}
+
+.TableX {
+    padding: 0px 0px 5px 0px;
+}
+
